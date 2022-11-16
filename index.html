@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How To Convert From Meters To Kilometers Using Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: darkseagreen;
+    }
+</style>
+<body>
+<body>
+<div class="container">
+    <br/><br/>
+    <div class="text-center">
+        <h1 id="color" style="color: white;">Convert From Meters To Kilometers Using Javascript</h1>
+    </div>
+
+    <div class="well">
+        <p>
+            <label>Meters</label>
+            <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </p>
+        <p>Kilometers: <span id="outputKilometers"></span></p>
+
+        <script>
+            function LengthConverter(valNum) {
+                document.getElementById("outputKilometers").innerHTML=valNum/1000;
+            }
+        </script>
+
+    </div>
+</div>
+</body>
+</html>
